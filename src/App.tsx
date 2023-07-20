@@ -9,6 +9,8 @@ import GlobalStyle from "./styles/global";
 function App() {
     const [count, setCount] = useState(0);
 
+    console.log(count);
+
     return (
         <S.Container>
             <Header />
