@@ -14,6 +14,11 @@ const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
         width: 100vw;
         height: 100vh;
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
   }
 
     button {

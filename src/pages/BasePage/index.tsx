@@ -6,9 +6,7 @@ function BasePage() {
     return (
         <>
             <Header />
-
             <Outlet />
-
             <Footer />
         </>
     );

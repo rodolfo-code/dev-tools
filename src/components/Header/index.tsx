@@ -1,6 +1,9 @@
 import * as S from "./header.styled";
 
 import lupa from "../../assets/message-code.png";
+import { Link } from "react-router-dom";
+
+const categories = ["Code", "Patterns", "APIs", "Styles", "Icons"];
 
 function Header(props: any) {
     return (
@@ -10,13 +13,13 @@ function Header(props: any) {
                 <p>DEV TOOLS</p>
             </S.Logo>
             <S.Menu>
-                <div>
-                    <p>Code</p>
-                    <p>Patterns</p>
-                    <p>APIs</p>
-                    <p>Styles</p>
-                    <p>Icons</p>
-                </div>
+                <ul>
+                    {categories.map((category: string) => (
+                        <li key={category}>
+                            <Link to={`content/${category}`}>{category}</Link>
+                        </li>
+                    ))}
+                </ul>
             </S.Menu>
             {/* <div>Code</div> */}
             {/* <hr /> */}

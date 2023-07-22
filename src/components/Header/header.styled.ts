@@ -32,15 +32,18 @@ export const Menu = styled.section`
 
     flex-grow: 1;
 
-    div {
+    ul {
         display: flex;
         align-items: center;
         /* justify-content: space-evenly; */
         width: 80%;
         gap: 20px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
     }
 
-    p {
+    li {
         font-weight: 400;
         font-size: 14px;
     }

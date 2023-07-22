@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import mql from "@microlink/mql";
+import { RouterProvider, useLocation } from "react-router-dom";
 
 import Card from "../Card";
 import { cards } from "./card";
@@ -8,28 +9,8 @@ import * as S from "./main.styled";
 import axios from "axios";
 
 function Main(props: any) {
-    const captureScreenshot = async () => {
-        try {
-            // const { data } = await mql("https://kikobeats.com", {
-            //     data: {
-            //         avatar: {
-            //             selector: "#avatar",
-            //             type: "image",
-            //             attr: "src",
-            //         },
-            //     },
-            // });
-
-            const { status, data } = await mql("https://github.com/microlinkhq");
-
-            // mql.render(data);
-
-            console.log(data);
-            console.log(status);
-        } catch (error) {
-            console.error(error);
-        }
-    };
+    let location = useLocation();
+    console.log("location", location);
 
     useEffect(() => {
         // captureScreenshot();
@@ -37,9 +18,10 @@ function Main(props: any) {
 
     return (
         <S.Main>
-            {cards.map((card) => (
+            {/* {cards.map((card) => (
                 <Card data={card} key={card.Link} />
-            ))}
+            ))} */}
+            <h2 style={{ color: "white" }}>{location.pathname}</h2>s
         </S.Main>
     );
 }

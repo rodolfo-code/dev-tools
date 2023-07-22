@@ -1,13 +1,16 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, createBrowserRouter, createRoutesFromElements } from "react-router-dom";
 import Home from "../pages/Home";
-import App from "../App";
+import App from "../pages/MainContent";
+import BasePage from "../pages/BasePage";
+import MainContent from "../pages/MainContent";
 
-export default function AppRoute() {
-    return (
-        <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<App />} />
-            </Routes>
-        </BrowserRouter>
-    );
-}
+const router = createBrowserRouter(
+    createRoutesFromElements(
+        <Route path="/" element={<BasePage />}>
+            <Route index element={<Home />} />
+            <Route path="/content/:category" element={<MainContent />} />
+        </Route>
+    )
+);
+
+export default router;
