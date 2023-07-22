@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-export default createGlobalStyle`
+const GlobalStyles = createGlobalStyle`
     body {
         font-family: "Inter",system-ui, sans-serif;
         overflow-y: hidden
@@ -9,14 +9,16 @@ export default createGlobalStyle`
     }
 
     html, body {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    height: 100vh;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 100vh;
   }
 
     button {
         cursor: pointer;
     }
 `;
+
+export default GlobalStyles;

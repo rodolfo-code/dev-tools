@@ -13,7 +13,6 @@ function App() {
 
     return (
         <S.Container>
-            <Header />
             <Sidebar />
             <Main />
             {/* <Footer /> */}
