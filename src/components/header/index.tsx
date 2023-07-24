@@ -14,7 +14,7 @@ export default function Header(props: any) {
                     <ul className="inline-flex items-center gap-12">
                         {categories.map((category: string) => (
                             <li key={category}>
-                                <Link href={`/content`}>{category}</Link>
+                                <Link href={`/content/${category.toLocaleLowerCase()}`}>{category}</Link>
                             </li>
                         ))}
                     </ul>
