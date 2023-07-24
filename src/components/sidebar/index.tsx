@@ -9,7 +9,7 @@ export default function Sidebar(props: any) {
                 <ul className="inline-flex items-center gap-12">
                     {categories.map((category: string) => (
                         <li key={category}>
-                            <Link href={`${category}`}>{category}</Link>
+                            <Link href={`/content/${category}`}>{category}</Link>
                         </li>
                     ))}
                 </ul>
