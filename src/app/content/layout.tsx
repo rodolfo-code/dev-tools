@@ -13,13 +13,9 @@ export const metadata: Metadata = {
 
 export default function ContentLayout({ children }: { children: React.ReactNode }) {
     return (
-        <html lang="en">
-            <body className={inter.className}>
-                <Header />
-
-                <Sidebar />
-                {children}
-            </body>
-        </html>
+        <div className="flex">
+            <Sidebar />
+            {children}
+        </div>
     );
 }
