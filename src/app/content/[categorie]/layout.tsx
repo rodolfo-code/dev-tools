@@ -1,5 +1,5 @@
 import Header from "@/components/header";
-import "../globals.css";
+import "../../globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Sidebar from "@/components/sidebar";
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function ContentLayout({ children }: { children: React.ReactNode }) {
     return (
-        <div className="flex">
+        <div className="flex h-full">
             <Sidebar />
             {children}
         </div>
