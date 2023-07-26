@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const categories = ["Code", "APIs", "Styles", "Icons"];
+const categories = ["code", "APIs", "styles", "icons"];
 
 export default function Header(props: any) {
     return (
@@ -14,7 +14,7 @@ export default function Header(props: any) {
                     <ul className="inline-flex items-center gap-12">
                         {categories.map((category: string) => (
                             <li key={category}>
-                                <Link href={`/content/${category.toLocaleLowerCase()}`}>{category}</Link>
+                                <Link href={`/content/${category}`}>{category}</Link>
                             </li>
                         ))}
                     </ul>
