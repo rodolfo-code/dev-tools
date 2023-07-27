@@ -21,7 +21,8 @@ module.exports = {
         'dark-matter': '#000',
         'lunar': {
             600: '#4F5B67'
-        }
+        },
+        'green': '#66bb6a'
     }
   },
   plugins: [],
