@@ -3,6 +3,8 @@
 import useColorMode from "@/hooks/useColorMode";
 import Image from "next/image";
 
+import vercel from "../imagem/vercel.svg";
+
 export default function Home() {
     const [colorMode, setColorMode] = useColorMode();
 
@@ -12,6 +14,10 @@ export default function Home() {
             {/* <button className="bg-green-200 p-4 rounded-3xl" onClick={() => setColorMode(colorMode === "light" ? "dark" : "light")}>
                 Dark Mode
             </button> */}
+            <button className="bg-dark-matter">
+                <Image src="/lua.png" width={20} height={20} alt={""} />
+                LAAAAAAAAAAAAAAA
+            </button>
         </>
     );
 }
