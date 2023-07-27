@@ -6,7 +6,7 @@ export default function Header(props: any) {
     return (
         <header className="flex w-full h-14 shadow-header dark:bg-dark-matter">
             <div className="flex items-center justify-center w-60">
-                <img src="" alt="" />
+                {/* <img src="" alt="" /> */}
                 <h4>LOGO</h4>
             </div>
             <div className="flex justify-center w-full px-4 shadow-header">
