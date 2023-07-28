@@ -7,7 +7,7 @@ const categories = ["All", "code", "APIs", "styles", "icons", "Templates", "Layo
 
 export default function Header(props: any) {
     return (
-        <header className="flex w-full h-14 shadow-header dark:bg-dark-matter">
+        <header className="flex w-full h-14 shadow-header dark:bg-dark-matter duration-500">
             <div className="flex items-center justify-center w-60">
                 {/* <img src="" alt="" /> */}
                 <h4>LOGO</h4>

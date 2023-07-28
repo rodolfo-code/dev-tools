@@ -14,7 +14,7 @@ const Toggle = () => {
             <input type="checkbox" onClick={handleCheckboxChange} className="sr-only" />
             <span
                 id="toggle"
-                className={`flex items-center p-[1px] slider mx-4 h-[20px] w-[50px] rounded-full duration-200 dark:bg-[#CCCCCE] bg-[#212b36] border-[2px] border-solid border-[#212b36] dark:border-[#CCCCCE]`}
+                className={`flex items-center p-[1px] slider mx-4 h-[20px] w-[50px] rounded-full duration-500 dark:bg-[#CCCCCE] bg-[#212b36] border-[2px] border-solid border-[#212b36] dark:border-[#CCCCCE]`}
             >
                 <span id="image container" className="flex justify-between mx-[2px] w-full">
                     <img src="/lunar.svg" width="14px" />
@@ -23,7 +23,7 @@ const Toggle = () => {
                 </span>
                 <span
                     id="slider do toggle"
-                    className={`absolute dot h-[16px] w-[16px] rounded-full bg-[white] dark:bg-[#212b36] duration-200 dark:translate-x-[29px] `}
+                    className={`absolute dot h-[16px] w-[16px] rounded-full bg-[white] dark:bg-[#212b36] duration-500 dark:translate-x-[29px] `}
                 ></span>
             </span>
         </label>
