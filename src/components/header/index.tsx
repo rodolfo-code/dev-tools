@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import Toggle from "../toggle";
 
 const categories = ["All", "code", "APIs", "styles", "icons", "Templates", "Layout"];
 
@@ -19,6 +22,9 @@ export default function Header(props: any) {
                         ))}
                     </ul>
                 </nav>
+            </div>
+            <div className="flex items-center justify-center px-4">
+                <Toggle />
             </div>
         </header>
     );
