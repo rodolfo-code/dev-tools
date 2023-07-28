@@ -31,6 +31,9 @@ module.exports = {
             800: '#242D35',
             900: '#0C1116'
         },
+        'indi-go': {
+            50: '#F7F7FB'
+        },
         'green': '#66bb6a'
     }
   },
