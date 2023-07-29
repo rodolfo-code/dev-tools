@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Toggle from "../toggle";
+import MenuItem from "../menuItem";
 
 const categories = ["All", "code", "APIs", "styles", "icons", "Templates", "Layout"];
 
@@ -14,11 +15,16 @@ export default function Header(props: any) {
             </div>
             <div className="flex justify-center w-full px-4 shadow-header">
                 <nav className="flex justify-center align-center w-full">
-                    <ul className="inline-flex items-center gap-12 text-lunar-600 dark:text-lunar-100">
+                    <ul className="inline-flex items-center dark:text-lunar-100">
                         {categories.map((category: string) => (
-                            <li key={category}>
-                                <Link href={`/content/${category}`}>{category}</Link>
-                            </li>
+                            <>
+                                <MenuItem padding="10">
+                                    <Link href={`/content/${category}`}>{category}</Link>
+                                </MenuItem>
+                                {/* <li key={category} className="p-[10px] text-lunar-600 hover:bg-indi-go-50 dark:hover:bg-lunar-800 duration-300">
+                                    <Link href={`/content/${category}`}>{category}</Link>
+                                </li> */}
+                            </>
                         ))}
                     </ul>
                 </nav>
