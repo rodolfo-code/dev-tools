@@ -7,14 +7,14 @@ const categories = ["All", "code", "APIs", "styles", "icons", "Templates", "Layo
 
 export default function Header(props: any) {
     return (
-        <header className="flex w-full h-14 shadow-header dark:bg-dark-matter">
-            <div className="flex items-center justify-center w-60">
+        <header className="flex w-full h-14 shadow-header dark:bg-dark-matter duration-500">
+            <div className="flex items-center justify-center w-60 border-[1px] border-solid border-green">
                 {/* <img src="" alt="" /> */}
-                <h4>LOGO</h4>
+                <h4 className="dark:text-lunar-100">LOGO</h4>
             </div>
             <div className="flex justify-center w-full px-4 shadow-header">
                 <nav className="flex justify-center align-center w-full">
-                    <ul className="inline-flex items-center gap-12 text-lunar-600">
+                    <ul className="inline-flex items-center gap-12 text-lunar-600 dark:text-lunar-100">
                         {categories.map((category: string) => (
                             <li key={category}>
                                 <Link href={`/content/${category}`}>{category}</Link>
