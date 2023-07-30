@@ -11,8 +11,8 @@ export default function Sidebar(props: any) {
     return (
         <aside className="h-screem w-2/12 dark:bg-dark-matter duration-500">
             <ul className="flex flex-col h-screem items-center">
-                {categories.map((category: string) => (
-                    <>
+                {categories.map((category: string, index) => (
+                    <div key={category + index} className="flex w-full flex-col">
                         <MenuItem>
                             <Link className="flex pl-5 p-2.5 w-full" href={`/content/${categorie}/${category}`}>
                                 <div className="flex items-center">
@@ -22,7 +22,7 @@ export default function Sidebar(props: any) {
                             </Link>
                         </MenuItem>
                         <div className="w-full h-[0.8px] bg-gradient-to-r from-lunar-100 via-transparent  to-transparent dark:bg-gradient-to-r dark:from-lunar-800 dark:via-transparent dark:to-transparent duration-300"></div>
-                    </>
+                    </div>
                 ))}
             </ul>
         </aside>
