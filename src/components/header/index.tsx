@@ -17,14 +17,9 @@ export default function Header(props: any) {
                 <nav className="flex justify-center align-center w-full">
                     <ul className="inline-flex items-center dark:text-lunar-100">
                         {categories.map((category: string) => (
-                            <>
-                                <MenuItem padding="10">
-                                    <Link href={`/content/${category}`}>{category}</Link>
-                                </MenuItem>
-                                {/* <li key={category} className="p-[10px] text-lunar-600 hover:bg-indi-go-50 dark:hover:bg-lunar-800 duration-300">
-                                    <Link href={`/content/${category}`}>{category}</Link>
-                                </li> */}
-                            </>
+                            <MenuItem padding="10" className="gap-12" key={category}>
+                                <Link href={`/content/${category}`}>{category}</Link>
+                            </MenuItem>
                         ))}
                     </ul>
                 </nav>
